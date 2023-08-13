@@ -1,4 +1,4 @@
-package merge;
+package MergeSort;
 //Ordenação por intercaão
 
 // divida o vetor ao meio 
@@ -9,6 +9,10 @@ package merge;
 import java.util.Arrays;
 
 public class MergeSortExample {
+    
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
                     // 0,1,2,3,4,5,6,7,8
         int[] vetor = {4,6,7,3,5,1,2,8}; 
@@ -21,7 +25,18 @@ public class MergeSortExample {
         System.out.println(Arrays.toString(vetor));
     }
 
-    private static void mergeSort(int[] vetor, int[] subVetor, int start, int theEnd) {
+    /**
+     * @param vetor
+     * @param subVetor
+     * @param start
+     * @param theEnd
+     */
+    private static void mergeSort(
+        int[] vetor, 
+        int[] subVetor, 
+        int start, 
+        int theEnd
+        ) {
         //Enquanto o inicio for menor que o fim
         if (start < theEnd) {
             int middle = (start + theEnd) / 2;
@@ -32,7 +47,20 @@ public class MergeSortExample {
         }  
     }
 
-    private static void intercalary(int[] vetor, int[] subVetor, int start, int middle, int theEnd) {
+    /**
+     * @param vetor
+     * @param subVetor
+     * @param start
+     * @param middle
+     * @param theEnd
+     */
+    private static void intercalary(
+        int[] vetor, 
+        int[] subVetor, 
+        int start, 
+        int middle, 
+        int theEnd
+        ) {
         for (int valueVetor = start; valueVetor <= theEnd; valueVetor++) {
             subVetor[valueVetor] = vetor[valueVetor];
         }
@@ -53,12 +81,4 @@ public class MergeSortExample {
             }
         }
     }
-   
-    
-    
-    
-    
-    
-    
-
 }
