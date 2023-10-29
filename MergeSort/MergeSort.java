@@ -72,6 +72,7 @@ public class MergeSort {
         for (int num : array) {
             System.out.print(num + " ");
         }
+        
         System.out.println();
 
         mergeSort(array, 0, array.length - 1);
