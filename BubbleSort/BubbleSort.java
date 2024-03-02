@@ -1,4 +1,4 @@
-package BubleSort;
+package BubbleSort;
 
 import java.util.Arrays;
 
@@ -9,7 +9,7 @@ import java.util.Arrays;
 //se os elementos não estão em ordem ,então ordene
 //Senão, avance para o proximo par
 //repita a opera;ão até que nenhuma troca possa ser feita no veotr inteiro
-public class BubleSort {
+public class BubbleSort {
     public static void main( String[] args) {
         int[] vetor = {55,55,60,66,643,66,444,33,1,2,3,4,5,6,7,8,10,9,10};
         blister(vetor);
